@@ -35,8 +35,8 @@ public class createPerson {
 
         RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
         requestSpecBuilder.setBaseUri("https://demo.api.iaecsp.org/server");
-        requestSpecBuilder.addHeader("x-api-key", "uQqITGf7B98dg2pUqqS8v4mN2OfgLqa674qELBMh");
-        requestSpecBuilder.addHeader("x-program-id", "4f851395-6ae3-4209-8609-93ff7e11d94a");
+        requestSpecBuilder.addHeader("x-api-key", "");
+        requestSpecBuilder.addHeader("x-program-id", "");
         requestSpecBuilder.addHeader("content-type", "application/json");
 //        requestSpecBuilder.log(LogDetail.ALL);
         RestAssured.requestSpecification = requestSpecBuilder.build();
@@ -51,7 +51,7 @@ public class createPerson {
     @Test
     public void createPerson() {
         String payload = "{\n" +
-                "    \"program_id\": \"4f851395-6ae3-4209-8609-93ff7e11d94a\",\n" +
+                "    \"program_id\": \"\",\n" +
                 "    \"reference\": \"12170502502202023\",\n" +
                 "    \"mother_name\": \"Mary\",\n" +
                 "    \"title\": \"Ms\",\n" +
